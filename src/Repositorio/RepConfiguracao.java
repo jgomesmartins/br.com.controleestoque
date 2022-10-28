@@ -32,7 +32,6 @@ public class RepConfiguracao {
     public List<Proxy> ConsultarProxy(Proxy obj) throws Exception {
 
         List<Proxy> listpro = new ArrayList<>();
-
         ResultSet rs = Banco.ExecutarConsultaSQL(QuerySQL.consultarProxy());
 
         while (rs.next()) {
@@ -60,15 +59,13 @@ public class RepConfiguracao {
         
        ResultSet rs = Banco.ExecutarConsultaSQL(QuerySQL.consultaCorPainel()); 
        rs.next();              
-       return  rs.getString("VALOR");
-                
+       return  rs.getString("VALOR");      
         
     }
 
     public int salvarCorPainel(String cor) throws Exception {
         
-        int rs  = Banco.ExecutarSQL(QuerySQL.salvaCorPainel(cor));
-        
+        int rs  = Banco.ExecutarSQL(QuerySQL.salvaCorPainel(cor));       
         return rs;
         
     }

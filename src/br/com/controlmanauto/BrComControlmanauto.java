@@ -23,7 +23,6 @@ public class BrComControlmanauto {
                 JOptionPane.showMessageDialog(null, ex.getMessage(), "Erro", JOptionPane.ERROR_MESSAGE);
                 System.exit(0);
             }
-
             if (!Classes.Config.DEVELOPMENT) {
 
                 if (args.length == 0) {
@@ -38,7 +37,6 @@ public class BrComControlmanauto {
                         JOptionPane.showMessageDialog(null, "Acesso negado por esse caminho, execute a versão \"ControlCar.exe ou ControlCar.bat\".", "Aviso", JOptionPane.WARNING_MESSAGE);
                         System.exit(0);
                     }
-
                 }
             }
 
